@@ -199,7 +199,7 @@ bar {
   i3bar_command /home/joe/.config/polybar/launch.sh
 }
 exec --no-startup-id compton -b -f -i 0.7 --mark-ovredir-focused
-exec --no-startup-id feh --bg-fill /home/joe/Documents/train\ track\ wallpaper.jpg
+exec --no-startup-id feh --bg-fill /home/joe/i3-config/train\ track\ wallpaper.jpg
 exec --no-startup-id nm-applet
 exec --no-startup-id alsactl restore
 
