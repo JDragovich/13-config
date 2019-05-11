@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# xautolock -time 5 -locker "i3lock -i /home/joe/Documents/dark-forest-2.png"
+xautolock -time 5 -locker "i3lock-color"
