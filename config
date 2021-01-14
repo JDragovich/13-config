@@ -146,7 +146,10 @@ bindsym Mod4+Shift+0 move container to workspace $ws10
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% && pkill -RTMIN+10 i3blocks #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% && pkill -RTMIN+10 i3blocks #decrease sound volume
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle && pkill -RTMIN+10 i3block# mute sound
-
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # reload the configuration file
 bindsym Mod4+Shift+c reload
@@ -199,7 +202,7 @@ bar {
   i3bar_command /home/joe/.config/polybar/launch.sh
 }
 exec --no-startup-id compton -b -f -i 0.7 --mark-ovredir-focused
-exec --no-startup-id feh --bg-fill /home/joe/i3-config/train\ track\ wallpaper.jpg
+exec --no-startup-id feh --bg-fill /home/joe/.config/i3/train\ track\ wallpaper.jpg
 exec --no-startup-id nm-applet
 exec --no-startup-id alsactl restore
 
